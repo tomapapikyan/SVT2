@@ -7,7 +7,7 @@ using namespace INMOST;
 using namespace std;
 
 void
-get_data(int N, Sparse::Matrix& A, Sparse::Vector& b, Sparse::Vector& exact_sol>
+get_data(int N, Sparse::Matrix& A, Sparse::Vector& b, Sparse::Vector& exact_sol){
 
     for(int i=0; i<(N-1)*(N-1); i++) {
         A[i][i] = 4;
@@ -54,8 +54,7 @@ test_num_sol(int N, Sparse::Vector num_sol, Sparse::Vector exact_sol)
 
 
 
-int
-main()
+int main()
 {
     int N;
     cin >> N;
